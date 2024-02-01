@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Challenge Oracle ONE</title>
+
+      <link rel="stylesheet" href="./styles/style.css">
+   </head>
+   <body>
+      <div class="content">
+         <header class="header">
+            <img class="header__logo" src="./assets/logo-alura.svg" alt="Logo da Alura">
+         </header>
+
+         <main class="actions">
+            <section class="actions__encrypt">
+               <textarea class="actions__encrypt__text" name="encrypt__text" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+
+               <div class="actions__encrypt__warn">
+                  <img src="./assets/exclamacao-aviso.svg" alt="Círculo cinza com exclamação dentro">
+                  <p>Apenas letras minúsculas e sem acento</p>
+               </div>
+
+               <section class="actions__buttons">
+                  <button class="button button-blue">Criptografar</button>  
+                  <button class="button button-white">Descriptografar</button>
+               </section>
+               
+            </section>
+         </main>
+
+         <div class="actions__decrypt-align">
+            <section class="actions__decrypt">
+               <img class="actions__decrypt__icon" src="./assets/icon-descriptografar.svg" alt="Desenho de uma pessoa olhando a face de um diamante com uma lupa">
+               <h1 class="actions__decrypt__title">Nenhuma mensagem encontrada</h1>
+               <h2 class="actions__decrypt__subtitle">Digite um texto que você deseja criptografar ou descriptografar.</h2>
+            </section>
+         </div>
+      </div>
+      
+   </body>
+</html>
