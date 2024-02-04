@@ -23,7 +23,7 @@
                </div>
 
                <section class="actions__buttons">
-                  <button class="button button-blue">Criptografar</button>  
+                  <button onclick="encrypt()" class="button button-blue">Criptografar</button>  
                   <button class="button button-white">Descriptografar</button>
                </section>
                
@@ -32,12 +32,19 @@
 
          <div class="actions__decrypt-align">
             <section class="actions__decrypt">
-               <img class="actions__decrypt__icon" src="./assets/icon-descriptografar.svg" alt="Desenho de uma pessoa olhando a face de um diamante com uma lupa">
-               <h1 class="actions__decrypt__title">Nenhuma mensagem encontrada</h1>
-               <h2 class="actions__decrypt__subtitle">Digite um texto que você deseja criptografar ou descriptografar.</h2>
+               <div class="actions__decrypt__initial">
+                  <img class="actions__decrypt__initial-icon" src="./assets/icon-descriptografar.svg" alt="Desenho de uma pessoa olhando a face de um diamante com uma lupa">
+                  <h1 class="actions__decrypt__initial-title">Nenhuma mensagem encontrada</h1>
+                  <h2 class="actions__decrypt__initial-subtitle">Digite um texto que você deseja criptografar ou descriptografar.</h2>
+               </div>
+               <div class="actions__decrypt__decrypted hide">
+                  <p class="actions__decrypt__decrypted-text"></p>
+                  <button class="actions__decrypt__decrypted-copy button button-white">Copiar</button>
+               </div>
             </section>
          </div>
       </div>
       
+      <script src="./script.js"></script>
    </body>
 </html>
