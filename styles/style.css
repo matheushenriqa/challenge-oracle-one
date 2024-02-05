@@ -25,12 +25,18 @@
    padding: 0;
 }
 
+html, body {
+   max-width: 100%;
+   overflow-x: hidden;
+}
+
 html {
    height: 100%;
    font-size: 62.5%;
 }
 
 body {
+   height: 100%;
    box-sizing: border-box;
    font-family: 'Inter', sans-serif;
    background-color: var(--light-blue-100);
@@ -39,7 +45,7 @@ body {
 .content {
    display: flex;
    justify-content: space-between;
-   height: 75rem;
+   height: 100vh;
 }
 
 .header {
@@ -48,7 +54,6 @@ body {
 
 .actions {
    display: flex;
-   height: 100%;
 }
 
 .actions__encrypt {
@@ -63,8 +68,8 @@ body {
    border: none;
    outline: none;
    background-color: var(--light-blue-100);
-   width: 68rem;
-   height: 60%;
+   height: 100%;
+   padding-top: 5rem;
 }
 
 .actions__encrypt__text,
@@ -184,6 +189,7 @@ body {
    text-align: center;
    padding: 1rem 0;
    background-color: #0A3871;
+   margin-top: 1rem;
 }
 
 .footer-text {
@@ -196,8 +202,14 @@ body {
 }
 
 @media (max-width: 1300px) {
+   body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
 
    .content {
+      height: initial;
       flex-direction: column;
    }
 
@@ -213,6 +225,7 @@ body {
    .actions__encrypt {
       width: 100%;
    }
+
 
    .actions__encrypt__text {
       width: 100%;
