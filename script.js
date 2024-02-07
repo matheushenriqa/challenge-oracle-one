@@ -43,7 +43,7 @@ function decrypt() {
    getText(textToEncrypt);
    encryptedText = text
       .replace(/enter/g, "e")
-      .replace(/imer/g, "i")
+      .replace(/imes/g, "i")
       .replace(/ai/g, "a")
       .replace(/ober/g, "o")
       .replace(/ufat/g, "u");
