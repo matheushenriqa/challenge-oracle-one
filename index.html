@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Challenge Oracle ONE</title>
 
-      <link rel="stylesheet" href="./styles/style.css">
-   </head>
-   <body>
-      <div class="content">
-         <header class="header">
-            <img class="header__logo" src="./assets/logo-alura.svg" alt="Logo da Alura">
-         </header>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Challenge Oracle ONE</title>
 
-         <main class="actions">
-            <section class="actions__encrypt">
-               <textarea class="actions__encrypt__text" name="encrypt__text" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+   <link rel="stylesheet" href="./styles/style.css">
+</head>
 
-               <div class="actions__encrypt__warn">
-                  <img src="./assets/exclamacao-aviso.svg" alt="Círculo cinza com exclamação dentro">
-                  <p>Apenas letras minúsculas e sem acento</p>
-               </div>
+<body>
+   <div class="content">
+      <header class="header">
+         <img class="header__logo" src="./assets/logo-alura.svg" alt="Logo da Alura">
+      </header>
 
-               <section class="actions__buttons">
-                  <button onclick="encrypt()" class="button button-blue">Criptografar</button>  
-                  <button onclick="decrypt()" class="button button-white">Descriptografar</button>
-               </section>
-               
+      <main class="actions">
+         <section class="actions__input">
+            <textarea class="actions__input__text" name="encrypt__text" cols="30" rows="10"
+               placeholder="Digite seu texto"></textarea>
+
+            <div class="actions__input__warn">
+               <img src="./assets/exclamacao-aviso.svg" alt="Círculo cinza com exclamação dentro">
+               <p>Apenas letras minúsculas e sem acento</p>
+            </div>
+
+            <section class="actions__input__buttons">
+               <button onclick="encrypt()" class="button button-blue">Criptografar</button>
+               <button onclick="decrypt()" class="button button-white">Descriptografar</button>
             </section>
-         </main>
+         </section>
+      </main>
 
-         <div class="actions__decrypt-align">
-            <section class="actions__decrypt">
-               <div class="actions__decrypt__initial">
-                  <img class="actions__decrypt__initial-icon" src="./assets/icon-descriptografar.svg" alt="Desenho de uma pessoa olhando a face de um diamante com uma lupa">
-                  <h1 class="actions__decrypt__initial-title">Nenhuma mensagem encontrada</h1>
-                  <h2 class="actions__decrypt__initial-subtitle">Digite um texto que você deseja criptografar ou descriptografar.</h2>
-               </div>
-               <div class="actions__decrypt__decrypted hide">
-                  <p class="actions__decrypt__decrypted-text"></p>
-                  <button onclick="copyText()" class="actions__decrypt__decrypted-copy button button-white">Copiar</button>
-               </div>
-            </section>
-         </div>
+      <div class="actions__output-align">
+         <section class="actions__output">
+            <div class="actions__output__initial">
+               <img class="actions__output__initial-icon" src="./assets/icon-descriptografar.svg"
+                  alt="Desenho de uma pessoa olhando a face de um diamante com uma lupa">
+               <h1 class="actions__output__initial-title">Nenhuma mensagem encontrada</h1>
+               <h2 class="actions__output__initial-subtitle">Digite um texto que você deseja criptografar ou descriptografar.</h2>
+            </div>
+            
+            <div class="actions__output__result hide">
+               <p class="actions__output__result-text"></p>
+               <button onclick="copyText()" class="actions__output__result-copy button button-white">Copiar</button>
+            </div>
+         </section>
       </div>
+   </div>
 
-      <footer class="footer">
-         <p class="footer-text">Desenvolvido por Matheus Henrique</p>
-      </footer>
-      
-      <script src="./script.js"></script>
-   </body>
+   <footer class="footer">
+      <p class="footer-text">Desenvolvido por Matheus Henrique</p>
+   </footer>
+
+   <script src="./script.js"></script>
+</body>
+
 </html>
