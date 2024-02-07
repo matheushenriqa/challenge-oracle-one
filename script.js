@@ -1,7 +1,8 @@
-const textToEncrypt = document.querySelector(".actions__encrypt__text");
-const textEncryptedArea = document.querySelector(".actions__decrypt__decrypted-text");
-const decryptInfo = document.querySelector(".actions__decrypt__initial");
-const decryptText = document.querySelector(".actions__decrypt__decrypted");
+const textToEncrypt = document.querySelector(".actions__input__text");
+const decryptInfo = document.querySelector(".actions__output__initial");
+const decryptText = document.querySelector(".actions__output__result");
+const textEncryptedArea = document.querySelector(".actions__output__result-text");
+
 let text;
 let encryptedText;
 
